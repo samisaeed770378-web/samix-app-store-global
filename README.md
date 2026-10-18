@@ -1,5 +1,11 @@
 # SAMI X APP STORE
-Independent static Android app catalog.
-Website: https://eyman4002-wq.github.io/samix-app-store/
-App download: downloads/NETCORE-X.apk
-Verify the APK with downloads/SHA256SUMS.txt.
+
+Public website for discovering and downloading Android apps.
+
+## NETCORE X
+
+Download: `downloads/NETCORE-X.apk`
+
+SHA-256: `downloads/SHA256SUMS.txt`
+
+Website is hosted using GitHub Pages.
