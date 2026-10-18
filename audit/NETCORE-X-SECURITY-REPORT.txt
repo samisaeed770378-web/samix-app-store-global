@@ -1,0 +1,38 @@
+NETCORE X - APK INSPECTION REPORT
+Generated: 2026-10-18 23:06:09 UTC
+APK file: downloads/NETCORE-X.apk
+Size in bytes: 25575
+SHA-256: 4434517337b90f7f3a10a99eb0faa7e242b45e653a78fa7be205252140dbc56d
+
+IMPORTANT: This is a local metadata/signature inspection,
+not a complete malware scan or a guarantee of app safety.
+
+===== SIGNATURE VERIFICATION =====
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Sami, OU=Dev, O=NetcoreX, L=Taiz, C=YE
+Signer #1 certificate SHA-256 digest: 0ca2aef86a4deda0c50fed1d88ebabca26e397a5ae6eebeea4b1305a6d062ca0
+Signer #1 certificate SHA-1 digest: 1fed7e487da1905660f5f9956ae9a7dc6c609418
+Signer #1 certificate MD5 digest: d2390dc722cacaec82eb9a3c4c02ecd7
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 856dbc4846ec139ba97439b3e19c6769c351eb07e298a65ffe5c74ab6fdf9279
+Signer #1 public key SHA-1 digest: aca1780315e005912301d18f2220e55fadd0a9d0
+Signer #1 public key MD5 digest: 2bea27b5f415dbbb3179713760b86ed7
+Signature verification: PASS
+
+===== APK PACKAGE METADATA =====
+error: "/data/data/com.termux/files/home/android-sdk/build-tools/36.0.0/aapt" is for EM_X86_64 (62) instead of EM_AARCH64 (183)
+
+===== FILE TYPE =====
+/data/data/com.termux/files/home/storage/downloads/NETCORE-X.apk: Android package (APK), with gradle app-metadata.properties, with APK Signing Block
+
+===== LIMITATIONS =====
+This report does not perform malware scanning, source-code review,
+dynamic behavior analysis, or a full permissions/security assessment.

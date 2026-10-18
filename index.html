@@ -2,185 +2,121 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#081426">
-<meta name="description"
-content="SAMI X APP STORE - اكتشف تطبيقات Android وحمّلها بسهولة.">
-<title>SAMI X APP STORE | متجر تطبيقات ساميكس</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="NETCORE X — منصة تطبيقات وأدوات تقنية. تعرف على التطبيق ونزّل نسخة Android المتاحة.">
+<title>NETCORE X | Official App</title>
 <style>
-:root {
- --bg:#081426;
- --card:#12243c;
- --accent:#46d7ff;
- --text:#f4f8ff;
- --muted:#b9c9dd;
-}
-* { box-sizing:border-box; }
-body {
- margin:0;
- background:linear-gradient(145deg,#081426,#123557);
- color:var(--text);
- font-family:system-ui,sans-serif;
- line-height:1.9;
-}
-header,main,footer {
- width:min(1000px,92%);
- margin:auto;
-}
-header {
- padding:24px 0;
- display:flex;
- align-items:center;
- justify-content:space-between;
- flex-wrap:wrap;
- gap:12px;
-}
-.logo { color:var(--accent);font-weight:900;font-size:1.3rem; }
-button,a { font:inherit; }
-button {
- background:transparent;
- color:var(--text);
- border:1px solid var(--accent);
- border-radius:10px;
- padding:7px 13px;
- cursor:pointer;
-}
-.hero { padding:55px 0 35px; }
-.hero small { color:var(--accent);font-weight:800; }
-h1 { font-size:clamp(2rem,7vw,3.6rem);line-height:1.35; }
-p { color:var(--muted); }
-.card {
- background:var(--card);
- border:1px solid #294968;
- border-radius:22px;
- padding:26px;
- margin:22px 0;
-}
-.app-icon {
- width:78px;height:78px;
- display:grid;place-items:center;
- border-radius:22px;
- background:#174d70;
- color:var(--accent);
- font-size:1.6rem;font-weight:900;
-}
-.btn {
- display:inline-block;
- padding:11px 20px;
- border-radius:12px;
- background:var(--accent);
- color:#061526;
- text-decoration:none;
- font-weight:850;
- margin:8px 0;
-}
-.secondary {
- background:transparent;
- color:var(--accent);
- border:1px solid var(--accent);
- margin-inline-start:8px;
-}
-footer {
- margin-top:50px;
- border-top:1px solid #294968;
- padding:25px 0;
-}
-a:focus-visible,button:focus-visible {
- outline:3px solid white;outline-offset:4px;
-}
+:root{color-scheme:dark;--bg:#07111f;--panel:#101e30;--line:#253b52;--text:#edf5ff;--muted:#a9bbcf;--accent:#42e8c5;--blue:#64a8ff}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#153453 0,transparent 48%),var(--bg);color:var(--text);font-family:system-ui,"Noto Sans Arabic",sans-serif;line-height:1.8}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid #ffffff18}
+.brand{font-weight:900;font-size:1.25rem;letter-spacing:1px}
+.brand span{color:var(--accent)}
+button,.btn{border:1px solid var(--line);border-radius:12px;padding:10px 16px;background:var(--panel);color:var(--text);font-weight:700;text-decoration:none;cursor:pointer}
+.hero{padding:75px 0 55px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+.badge{display:inline-block;color:var(--accent);border:1px solid #42e8c555;padding:4px 12px;border-radius:30px;font-size:.85rem}
+h1{font-size:clamp(2.4rem,6vw,4.8rem);line-height:1.15;margin:20px 0}
+h1 span{color:var(--accent)}
+p{color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.primary{background:var(--accent);color:#04151a;border-color:var(--accent)}
+.visual{border:1px solid var(--line);border-radius:28px;padding:25px;background:linear-gradient(145deg,#142c44,#091523);box-shadow:0 25px 80px #0005}
+.screen{border:1px solid #35516d;border-radius:18px;padding:18px;background:#07111f}
+.screen-head{display:flex;justify-content:space-between;color:var(--accent);font-weight:800}
+.bar{height:10px;border-radius:20px;background:#263d54;margin:12px 0}
+.bar:nth-child(3){width:75%}.bar:nth-child(4){width:54%}
+.tile-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.tile{padding:16px 10px;border-radius:12px;background:#12263a;border:1px solid #29465e}
+.tile b{display:block;color:var(--accent)}
+section{padding:45px 0}
+.section-title{font-size:2rem;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(145deg,#112238,#0b1727);border:1px solid var(--line);border-radius:18px;padding:22px}
+.icon{font-size:1.7rem}
+.card h3{margin:8px 0}
+.security{border:1px solid #42e8c555;background:#0d2529;border-radius:18px;padding:24px}
+code{overflow-wrap:anywhere;color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:25px 0;margin-top:40px;color:var(--muted)}
+footer a{margin-inline-end:14px}
+.small{font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:45px}.grid{grid-template-columns:1fr}.visual{max-width:520px}.section-title{font-size:1.7rem}}
 </style>
 </head>
 <body>
-<header>
- <div class="logo">✦ SAMI X APP STORE</div>
- <button id="language" type="button">English</button>
-</header>
+<div class="wrap">
+<nav>
+ <div class="brand">NETCORE <span>X</span></div>
+ <div><button id="lang" type="button">English</button></div>
+</nav>
+
 <main>
- <section class="hero">
-  <small id="tag">متجر تطبيقات Android</small>
-  <h1 id="title">تطبيقاتك الرقمية في مكان واحد</h1>
-  <p id="intro">
-   اكتشف تطبيقات وأدوات رقمية من خلال متجر SAMI X APP STORE.
-  </p>
-  <a class="btn" href="#apps" id="explore">استكشف التطبيقات ↓</a>
- </section>
+<section class="hero">
+ <div>
+  <span class="badge" data-ar="الموقع الرسمي للمشروع" data-en="Official Project Website">الموقع الرسمي للمشروع</span>
+  <h1 data-ar="التقنية تبدأ من <span>NETCORE X</span>" data-en="Technology starts with <span>NETCORE X</span>">التقنية تبدأ من <span>NETCORE X</span></h1>
+  <p data-ar="تعرف على المشروع، استعرض معلومات النسخة المتاحة، وانتقل إلى التنزيل من مصدر المشروع الرسمي." data-en="Explore the project, review the available build information, and download from the official project site.">تعرف على المشروع، استعرض معلومات النسخة المتاحة، وانتقل إلى التنزيل من مصدر المشروع الرسمي.</p>
+  <div class="actions">
+   <a class="btn primary" href="./downloads/NETCORE-X.apk" data-ar="تنزيل تطبيق Android" data-en="Download Android APK">تنزيل تطبيق Android</a>
+   <a class="btn" href="./security.html" data-ar="معلومات الفحص" data-en="Security information">معلومات الفحص</a>
+  </div>
+  <p class="small" data-ar="نزّل التطبيق فقط إذا كنت تثق بمصدره، وراجع أذونات التثبيت على جهازك." data-en="Install only if you trust the source and review Android's installation permissions.">نزّل التطبيق فقط إذا كنت تثق بمصدره، وراجع أذونات التثبيت على جهازك.</p>
+ </div>
+ <div class="visual" aria-label="NETCORE X interface preview">
+  <div class="screen">
+   <div class="screen-head"><span>NETCORE X</span><span>● ONLINE</span></div>
+   <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+   <div class="tile-grid">
+    <div class="tile"><b>01</b><span data-ar="الأدوات" data-en="Tools">الأدوات</span></div>
+    <div class="tile"><b>02</b><span data-ar="المعلومات" data-en="Information">المعلومات</span></div>
+    <div class="tile"><b>03</b><span data-ar="التحليل" data-en="Analysis">التحليل</span></div>
+    <div class="tile"><b>04</b><span data-ar="الإعدادات" data-en="Settings">الإعدادات</span></div>
+   </div>
+  </div>
+  <p class="small" data-ar="معاينة تصميمية للموقع وليست لقطة شاشة فعلية من التطبيق." data-en="Website design preview, not an actual screenshot of the app.">معاينة تصميمية للموقع وليست لقطة شاشة فعلية من التطبيق.</p>
+ </div>
+</section>
 
- <section id="apps">
-  <h2 id="appsTitle">التطبيقات المتاحة</h2>
-  <article class="card">
-   <div class="app-icon" aria-label="NETCORE X">NX</div>
-   <h2>NETCORE X</h2>
-   <p id="description">
-    تطبيق لأدوات الشبكات. راجع تفاصيل التطبيق وتوافقه مع جهازك
-    قبل التثبيت.
-   </p>
-   <p id="format">ملف Android APK</p>
-   <a class="btn" href="downloads/NETCORE-X.apk"
-      download id="download">تنزيل التطبيق</a>
-   <a class="btn secondary" href="downloads/SHA256SUMS.txt"
-      id="checksum">بصمة التحقق</a>
-  </article>
- </section>
+<section>
+ <h2 class="section-title" data-ar="عن المشروع" data-en="About the project">عن المشروع</h2>
+ <p data-ar="واجهة تعريفية لتنزيل NETCORE X ومراجعة معلومات الإصدار. ستُعرض تفاصيل الأدوات المدعومة بعد التحقق منها في النسخة الفعلية." data-en="An information and download page for NETCORE X. Specific app capabilities will be listed after they are verified in the actual build.">واجهة تعريفية لتنزيل NETCORE X ومراجعة معلومات الإصدار. ستُعرض تفاصيل الأدوات المدعومة بعد التحقق منها في النسخة الفعلية.</p>
+ <div class="grid">
+  <article class="card"><div class="icon">📱</div><h3 data-ar="نسخة Android" data-en="Android build">نسخة Android</h3><p data-ar="رابط مباشر إلى ملف APK المنشور." data-en="Direct link to the published APK file.">رابط مباشر إلى ملف APK المنشور.</p></article>
+  <article class="card"><div class="icon">🔎</div><h3 data-ar="معلومات الشفافية" data-en="Transparency">معلومات الشفافية</h3><p data-ar="عرض بصمة SHA-256 ونتائج فحص الملف المتاحة." data-en="View the SHA-256 fingerprint and available file inspection results.">عرض بصمة SHA-256 ونتائج فحص الملف المتاحة.</p></article>
+  <article class="card"><div class="icon">🌐</div><h3 data-ar="عربي وإنجليزي" data-en="Arabic and English">عربي وإنجليزي</h3><p data-ar="تبديل لغة صفحة الموقع بسهولة." data-en="Switch the website language easily.">تبديل لغة صفحة الموقع بسهولة.</p></article>
+ </div>
+</section>
 
- <section class="card">
-  <h2 id="aboutTitle">حول المتجر</h2>
-  <p id="aboutText">
-   منصة مستقلة للتعريف بالتطبيقات وتوفير روابط التنزيل.
-   افحص الملفات قبل تثبيتها ولا تثبّت إلا التطبيقات التي تثق بمصدرها.
-  </p>
- </section>
+<section class="security">
+ <h2 data-ar="قبل التثبيت" data-en="Before installing">قبل التثبيت</h2>
+ <p data-ar="تحقق من مصدر الملف وتوقيعه وبصمته. تقرير الفحص لا يضمن خلو التطبيق من جميع المخاطر، ولا يحل محل مراجعة الكود واختبارات أمنية مستقلة." data-en="Verify the file source, signature, and hash. An inspection report cannot guarantee that an app is risk-free or replace code review and independent security testing.">تحقق من مصدر الملف وتوقيعه وبصمته. تقرير الفحص لا يضمن خلو التطبيق من جميع المخاطر، ولا يحل محل مراجعة الكود واختبارات أمنية مستقلة.</p>
+ <a class="btn" href="./security.html" data-ar="فتح تقرير الفحص" data-en="Open inspection report">فتح تقرير الفحص</a>
+</section>
 </main>
+
 <footer>
- <strong>SAMI X APP STORE</strong>
- <p id="disclaimer">
-  متجر مستقل، وليس تابعًا رسميًا إلى Google Play.
-  تنزيل التطبيق لا يعني اعتماده من Google.
- </p>
+ <div data-ar="تطوير المشروع: المهندس سامي الصنوي" data-en="Project developer: Sami Al-Senawi">تطوير المشروع: المهندس سامي الصنوي</div>
+ <div class="small">
+  <a href="./privacy.html" data-ar="سياسة الخصوصية" data-en="Privacy notice">سياسة الخصوصية</a>
+  <a href="https://github.com/samisaeed770378-web/samix-app-store-global">GitHub</a>
+ </div>
+ <p class="small">NETCORE X · <span id="year"></span></p>
 </footer>
+</div>
 <script>
-const translations = {
- ar: {
-  tag:"متجر تطبيقات Android",
-  title:"تطبيقاتك الرقمية في مكان واحد",
-  intro:"اكتشف تطبيقات وأدوات رقمية من خلال متجر SAMI X APP STORE.",
-  explore:"استكشف التطبيقات ↓",
-  appsTitle:"التطبيقات المتاحة",
-  description:"تطبيق لأدوات الشبكات. راجع تفاصيل التطبيق وتوافقه مع جهازك قبل التثبيت.",
-  format:"ملف Android APK",
-  download:"تنزيل التطبيق",
-  checksum:"بصمة التحقق",
-  aboutTitle:"حول المتجر",
-  aboutText:"منصة مستقلة للتعريف بالتطبيقات وتوفير روابط التنزيل. افحص الملفات قبل تثبيتها ولا تثبّت إلا التطبيقات التي تثق بمصدرها.",
-  disclaimer:"متجر مستقل، وليس تابعًا رسميًا إلى Google Play. تنزيل التطبيق لا يعني اعتماده من Google."
- },
- en: {
-  tag:"Android App Store",
-  title:"Your digital apps in one place",
-  intro:"Discover digital apps and tools at SAMI X APP STORE.",
-  explore:"Explore apps ↓",
-  appsTitle:"Available apps",
-  description:"A networking tools app. Review the app details and device compatibility before installation.",
-  format:"Android APK file",
-  download:"Download app",
-  checksum:"Verification hash",
-  aboutTitle:"About the store",
-  aboutText:"An independent app directory. Scan files before installation and install only apps from sources you trust.",
-  disclaimer:"Independent store, not officially affiliated with Google Play. Listing does not imply Google approval."
- }
-};
-let current = "ar";
-document.getElementById("language").addEventListener("click", () => {
- current = current === "ar" ? "en" : "ar";
- const t = translations[current];
- document.documentElement.lang = current;
- document.documentElement.dir = current === "ar" ? "rtl" : "ltr";
- for (const [id, value] of Object.entries(t)) {
-   const el = document.getElementById(id);
-   if (el) el.textContent = value;
- }
- document.getElementById("language").textContent =
-   current === "ar" ? "English" : "العربية";
+let en=false;
+document.getElementById('lang').addEventListener('click',()=>{
+ en=!en;
+ document.documentElement.lang=en?'en':'ar';
+ document.documentElement.dir=en?'ltr':'rtl';
+ document.querySelectorAll('[data-ar]').forEach(el=>{
+  el.innerHTML=en?el.dataset.en:el.dataset.ar;
+ });
+ document.getElementById('lang').textContent=en?'العربية':'English';
 });
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
