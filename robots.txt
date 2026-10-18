@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samisaeed770378-web.github.io/samix-app-store-global/sitemap.xml
